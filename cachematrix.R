@@ -34,10 +34,10 @@ cacheSolve <- function(x, ...) {
                 # If identity matrix has unity diag
                 # i.e. check if matrix has changed
                 # since inverse was calculated
-                if (all(diag(x$get() %*% m) == 1)){
-                        message("getting cached data")
-                        return(m)
-                }
+                #if (all(diag(x$get() %*% m) == 1)){
+                #        message("getting cached data")
+                #        return(m)
+                #}
         }
         # Calculated inverse matrix if not already cached 
         # or if input matrix changes
